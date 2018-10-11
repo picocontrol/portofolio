@@ -1,0 +1,10 @@
+#contact {
+    background-color: white;
+}
+
+#contact-form{
+    background-image: url('https://www.cityoftalent.nl/uploads/tw_image/438415c3-3eb7-5ec1-afa0-73fa0596653a/3006139505/Skyline%20Groningen%20%282%29.jpg');
+    height: 650px;
+    color: #ffffff;
+    padding: 50px
+}

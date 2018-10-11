@@ -1,0 +1,466 @@
+/* responsive try-out */
+html {
+    font-size:100%;
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 640px) { body {font-size:1rem;} }
+@media (min-width:960px) { body {font-size:1.2rem;} }
+@media (min-width:1100px) { body {font-size:1.5rem;} }
+
+/* clear the body margin */
+body {
+    margin: 0;
+    background-color: white;
+}
+
+.banner {
+    /* this bit of markup is essential */
+    position: relative;
+    overflow: hidden;
+
+    /* do this shit by yourself */
+    background: rgba(0, 0, 0, .5) url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXQdISfAAAAAElFTkSuQmCC');
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100vh;
+    letter-spacing: 2px;
+}
+
+.banner__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+
+#profiel {
+background-image: url('watercolorachtergrond3.jpg');
+background-size: cover;
+height: 250px;
+display: flex;
+    align-items: center;
+    text-align: center;
+padding: 100px;
+}
+
+#contact-form {
+    color: white;
+}
+
+#partners {
+    background-image: url('partners-bg.jpg');
+    text-align: center;
+}
+
+#calltoaction2 {
+    background-color: white;
+    text-align: center;
+}
+
+#walloffame {
+    background-image: url('achtergrond v2-zwartwit.jpg');
+    text-align:center;
+    align-items:center;
+    vertical-align: center;
+    padding: 30px;
+}
+
+#page1 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Color_icon_white.svg/1200px-Color_icon_white.svg.png');
+    background-size: cover;
+    height: 350px;
+    display:flex;
+    align-items:center;
+    padding: 100px;
+}
+
+#page2 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9ZaSVaek29uZ05OCnnPus-S0t-2k-08A0ql5gXBGrGlz2vVhm');
+    background-size: cover;
+    height: 350px;
+    background-color: white;
+    display:flex;
+    align-items:center;
+    padding: 100px
+}
+
+#page3 {
+    background-image: url('watercolorachtergrond.jpg');
+    background-size: cover;
+    height: 350px;
+        background-color: lightgr;
+        display:flex;
+        align-items:center;
+        padding: 100px
+}
+#page4 {
+    height: 50px;
+        background-color: lightgr;
+        text-align: center;
+        vertical-align: middle;
+}
+
+#page6 {
+    background-image: url('https://www.cityoftalent.nl/uploads/tw_image/438415c3-3eb7-5ec1-afa0-73fa0596653a/3006139505/Skyline%20Groningen%20%282%29.jpg');
+}
+#programmeertalen {
+    background-image: url('achtergrond v2-zwartwit.jpg');
+    background-size: cover;
+    text-align: center;
+}
+#wistudat {
+    background-image: url('wistudat-achtergrond.png');
+    background-size: cover;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+#portfolio-tekst {
+    background-color: white
+}
+
+#overmij {
+    background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/Hnd01gaCiu89hpk4/videoblocks-diagonal-waves-white-background-abstract-color-background-color-gradient-business-cinematic-background-seamless-loop-place-for-text_bdeoacg7km_thumbnail-full01.png');
+    padding: 40px
+}
+
+#overmij_center {
+    text-align: center;
+    height: 30px
+}
+
+#calltoaction {
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#portfolio {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+    * {
+        box-sizing: border-box;  }
+
+body {
+        background-color: ghostwhite;
+        font-family: Montserrat; sans-serif;
+        font-size:2vw;
+}
+
+    /* Center website */
+.main {
+        max-width: 1000px;
+        margin: auto;
+}
+
+h1 {
+        font-size: 40px;
+        word-break: break-all;
+        text-align: center;
+}
+
+.row {
+        margin: 8px -16px;
+}
+
+    /* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+        padding: 8px;
+}
+
+    /* Create four equal columns that floats next to each other */
+.column {
+        float: left;
+        width: 50%;
+}
+
+    /* Clear floats after rows */
+.row:after {
+        content: "";
+        display: table;
+        clear: both;
+}
+
+    /* Content */
+.content {
+        background-color: white;
+        padding: 10px;
+}
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+        .column {
+            width: 100%;
+        }
+}
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+    }
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#footer > p:first-child {
+    float: left;
+    text-align: center;
+    width: 33.3%; }
+
+#footer > p:nth-child(2) {
+    float: left;
+    text-align: center;
+    width: 33.4%; }
+
+#footer > p:last-child {
+    float: right;
+    text-align: center;
+    width: 33.3%; }
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+@-moz-keyframes
+fade-it { 0% {
+    opacity:0
+}
+    100% {
+        opacity:1
+    }
+}
+
+@-webkit-keyframes
+fade-it { 0% {
+    opacity:0
+}
+    100% {
+        opacity:1
+    }
+}
+
+@keyframes
+fade-it { 0% {
+    opacity:0
+}
+    100% {
+        opacity:1
+    }
+}
+
+.js-fade-in-verb {
+    animation-name: fade-it;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: fade-it;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards
+}
+
+.verb.js-block { display: inline-block }
+
+.verb.js-hide {
+    display: none;
+    opacity: 0
+}
+
+.verb {
+    display: inline-block;
+    visibility: visible;
+}
+
+.js-fade-in-verb2 {
+    animation-name: fade-it;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: fade-it;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards
+}
+
+.verb2.js-block { display: inline-block }
+
+.verb2.js-hide {
+    display: none;
+    opacity: 0
+}
+
+.verb2 {
+    display: inline-block;
+    visibility: visible;
+}
+
+
+form {
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+input, textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+
+    /* To give the same size to all text field */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #000;
+}
+
+textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* To give enough room to type some text */
+    height: 5em;
+
+    /* To allow users to resize any textarea vertically
+       It does not work on all browsers */
+    resize: vertical;
+}
+
+.button {
+    /* To position the buttons to the same position of the text fields */
+    padding-left: 90px; /* same size as the label elements */
+}
+button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: .5em;
+}
+
+.homepage-banner{
+    padding:50px;
+    background:#2b2b2b;
+}
+
+.cta-button {
+    color: white;
+    font-family: "proxima-nova", sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 5px;
+    background-color: #f09e3f;
+/ / Old browsers @include filter-gradient(#f09e3f, #e4690e, vertical);
+/ / IE6-9 @include background-image(linear-gradient(top, #f09e3f 0 %, #ea811f 53 %, #e97b16 54 %, #e4690e 100 %));
+@include transition(200 ms);
+    padding: 14px;
+    width: 300px;
+    display: block;
+    text-align: center;
+    text-shadow: 1px 1px 1px #dd360b;
+    box-shadow: inset 2px 2px 0px rgba(white, 0.3), 0px 2px 2px rgba(black, 0.2);
+}
+&:hover {
+ // needs latest Compass, add '@import "compass"' to your scss
+ background-color: #f2a854; // Old browsers
+ @include filter-gradient(#f2a854, #f17a1f, vertical); // IE6-9
+ @include background-image(linear-gradient(top,  #f2a854 0%,#ec8f38 53%,#ec8b30 54%,#f17a1f 100%));
+     box-shadow:inset 2px 2px 0px rgba(white,0.3), 0px 3px 4px rgba(black,0.3);
+ }
+&:active {
+ // needs latest Compass, add '@import "compass"' to your scss
+ background-color: #ee8b1a; // Old browsers
+ @include filter-gradient(#ee8b1a, #cf610d, vertical); // IE6-9
+ @include background-image(linear-gradient(top,  #ee8b1a 0%,#d87314 53%,#d37013 54%,#cf610d 100%));
+
+     box-shadow:
+             inset 2px 2px 0px rgba(black,0.3),
+             0px 3px 4px rgba(black,0.3),
+             inset -1px -1px 0px rgba(white,0.2);
+ }
+
+&.white {
+     border:1px solid #f09e3f;
+ }
+.content-area a {
+    text-align: center;
+    margin: auto;
+}
+
+.content-area {
+    background-color: white;
+    padding:50px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}

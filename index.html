@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .header {
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-color: white;
+        }
+
+        #navbar a {
+            float: left;
+            display: block;
+            color: #000;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        #navbar a:hover {
+            background-color: white;
+            color: red;
+            font-weight: bold;
+        }
+
+        #navbar a.active {
+            background-color: #fff;
+            color: black;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky + .content {
+            padding-top: 60px;
+        }
+    </style>
+    <title>Portfolio Sven Wilpstra</title>
+    <link rel="stylesheet" type ="text/css" href="stylesheet.css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type ="text/css" href="lightbox.css" />
+    <script type="text/javascript" src="videoheader.js"></script>
+</head>
+<body>
+<div class="banner">
+    <a id="start" class="smooth"></a>
+    Sven Wilpstra: UI Design & marketing
+    <video autoplay loop muted class="banner__video" poster="https://pawelgrzybek.com/photos/2015-12-06-codepen.jpg">
+        <source src="dronevideo.mp4" type="video/mp4">
+    </video>
+</div>
+<div id="navbar">
+    <a class="active" href="#start">Home</a>
+    <a href="#portfolio">Portofolio</a>
+    <a href="#vaardigheden">Vaardigheden</a>
+    <a href="#about">Over mij</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<div class=wrapper id="page1">
+        Vanaf januari 2018 is Sven part-time aan het werk als consultant & front-end developer.  In de tijd die overblijft werkt hij als freelancer onder de naam Less Marketing. Een website is voor mij als een tube tandpasta. De tube raakt nooit helemaal leeg en kan altijd meer uitgeknepen worden. Deze website biedt u een overzicht van mijn portofolio en vaardigheden.
+        <img src="toothpaste.jpg" width="40%" style="padding-left:70px">
+    </div>
+
+<div class=wrapper id="page2">
+    <img src="b2b.png" width="40%" style="padding-right:40px">Wij zorgen ervoor dat uw website beter bijdraagt aan uw bedrijfsresultaat, vindbaarheid op basis van een goede samenwerking tussen ons en u als cliënt. Hierbij houden wij rekening met alle trends en sturen wij voortdurend bij waar nodig.
+</div>
+
+<div class=wrapper id="page3">
+    Bent u bang het overzicht kwijt te raken als u het maken van uw website uit handen geeft? Door onze unieke samenwerking met WordPress for Less krijgt u nu tijdelijk korting op uw eerste cursus om u de kneepjes van het vak bij te brengen. Hierna kunt u uw eigen website maken, beheren èn onderhouden!
+    <img src="wordpress.jpg" width="40%" style="padding-left:70px">
+</div>
+
+<div id="portfolio-tekst">
+<a id="portfolio" class="smooth"></a>
+<h1>Portfolio</h1>
+<p>Een kleine selectie van websites gemaakt door Sven Wilpstra. Klik op een thumbnail voor een grotere versie.</p>
+
+<!-- thumbnail image wrapped in a link -->
+<div class="row">
+    <div class="column">
+        <a href="#img1">
+            <img src="wit.png" class="thumbnail">
+        </a>Sanderman Art - Portofolio
+    </div>
+    <!-- lightbox container hidden with CSS -->
+    <a href="#_" class="lightbox" id="img1">
+        <img src="wit.png">
+    </a>
+    <!-- thumbnail image wrapped in a link -->
+    <div class="column">
+        <a href="#img2">
+            <img src="rose.png" class="thumbnail">
+        </a>MinkArt - Online galerij
+    </div>
+    <!-- lightbox container hidden with CSS -->
+    <a href="#_" class="lightbox" id="img2">
+        <img src="rose.png">
+    </a>
+</div>
+<div class="row">
+    <div class="column">
+        <a href="#img3">
+            <img src="zwartwit.png" class="thumbnail">
+        </a>Voorbeeld portofolio
+    </div>
+    <!-- lightbox container hidden with CSS -->
+    <a href="#_" class="lightbox" id="img3">
+        <img src="zwartwit.png">
+    </a>
+    <!-- thumbnail image wrapped in a link -->
+    <div class="column">
+        <a href="#img4">
+            <img src="oranje.png" class="thumbnail">
+        </a>Bedrijfswebsite Project Study
+    </div>
+    <!-- lightbox container hidden with CSS -->
+    <a href="#_" class="lightbox" id="img4">
+        <img src="oranje.png">
+    </a>
+</div>
+</div>
+<div class="wrapper" id="calltoaction">
+<h1>Kies voor maatwerk</h1>
+<p>Hieronder vind u diverse sjablonen waar u uit kunt kiezen voor uw eigen website, daarnaast kan uw website ook compleet op maat worden gemaakt.</p>
+</div>
+
+<img src="templates.png" alt="Check" style="width:100%">
+<a id="vaardigheden" class="smooth"></a>
+<div class=wrapper id="programmeertalen"><h1>Mijn vaardigheden</h1><br/>
+    <div class=wrapper id="profiel">
+        <img src="profielfoto_svenwilpstra.png">
+        Bij mij kunt u terecht voor&nbsp;<span class="verb">de volgende programmeertalen:</span>
+    </div>
+    <img src="icons/PNGs/angular-logo.png"><img src="icons/PNGs/jquery-klein.png"><img src="icons/PNGs/owasp-logo-klein.png"><img src="icons/PNGs/react-logo.png">
+        <img src="icons/PNGs/woocommerce_logo.png"><img src="icons/PNGs/vuejs-logo.png"><img src="icons/PNGs/laravel-logo.png"> <img src="icons/PNGs/logo-mysql.png"><br/>
+        <img src="icons/PNGs/Bootstrap.png"><img src="icons/PNGs/css3-logo.png"><img src="icons/PNGs/GitHub.png"><img src="icons/PNGs/heroku-logo.svg">
+        <img src="icons/PNGs/html.png"><img src="icons/PNGs/Javascript.png"><img src="icons/PNGs/PHP.png"><img src="icons/PNGs/photoshop-logo.png"><img src="icons/PNGs/WordPress.png">
+</div>
+
+<div class=wrapper id="wistudat">
+    <h1>Wist u dat?</h1>
+    <h3>Sven <span class="verb2">heeft gewerkt in de retail, horeca & marketing</span>.</h3>
+</div>
+<a id="about" class="smooth"></a>
+
+<div class="row" id="overmij">
+    <div id="overmij_center"><h2>Over Mij</h2></div>
+            <div class="row"></div>
+    <div class="column">Sven Wilpstra komt uit Groningen en ontwikkelt concepten, online publicaties & marketingstrategieën. Als u een website op maat wil,t waarbij tot in detail met elk van uw wensen rekening wordt gehouden, neemt u dan gerust contact op via het formulier onderaan de pagina. Van jongs af aan is Sven actief op het internet en was hij als hobbyist actief als webdesigner en programmeur. Na zijn opleiding Small Business & Retail Management heeft hij de kans gekregen zich verder te ontwikkelen met dank aan CodeGorilla. Hiermee heeft hij ook zijn portfolio opgebouwd.</div>
+    <div class="column">Sven vind het belangrijk om een website op maat te maken, rekening houdend met alle wensen van de klant. Bij het ontwerpen van een website wordt gekeken naar functionaliteit, gebruiksgemak en originaliteit. Doordat elke website die hij ontwerp uniek is, bent u verzekerd van een website die perfect aansluit bij uw huissstijl en bedrijfscultuur. Naast het ontwerpen van een website denkt Sven ook graag mee aan de verdere uitwerking van concepten en het beter benutten van online kanalen. Bent u nieuwsgierig geworden? Wij gaan graag vrijblijvend met u in gesprek!</div>
+</div>
+
+<div class=wrapper id="partners">
+    <h1>Onze online projecten</h1>
+    <p><a href="http://www.project-study.nl"><img src="project-study-logo.png"></a> <a href="http://www.mink-art.nl"><img src="minkArt-logo-klein2.png"></a></p>
+    <h3>Under construction of inmiddels offline projecten</h3>
+           <p><img src="hetverschil-logo.png"><img src="sanderman-logo.png"></p>
+    <p><h3>Tijd tot deadline volgende project</h3></p>
+    <!-- Display the countdown timer in an element -->
+    <p id="demo"></p>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Oct 11, 2018 15:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</div>
+
+<div id="calltoaction2">
+    <h1>Let op</h1>
+    Uw website kan de volgende deadline zijn! <br/>
+    Neem vandaag nog contact op voor een vrijblijvende en (tijdelijk) gratis intake!
+</div>
+<div class="content-area" id="orangebutton">
+    <a href="#contact" class="cta-button white">Gratis intake</a>
+</div>
+
+<div class=wrapper id="walloffame">
+    <img src="walloffame.png"><br/>
+    Tijdens mijn opleiding tot junior web developer<br/>
+    doen zich inspirerende momenten voor.<br/>
+    Graag zou ik degene van CodeGorilla die mij inspireren in het zonnetje zou willen zetten.<br/>
+    <img src="spirit-gold.png">Week 1: Rik (productiviteit)<img src="spirit-java-week1.png"><br/>
+    <img src="spirit-gold.png">Week 2: Raoul (creativiteit)<img src="spirit-java-week2.png">
+</div>
+
+<div id="page6">
+        <a id="contact" class="smooth"></a>
+        <section id=contactformulier>
+            <form id="contact-form" action="/my-handling-form-page" method="post">
+                <h3>Contactformulier</h3>
+                <h4>Neem contact met ons op en wij reageren binnen 24 uur.</h4>
+                <div>
+                    <label>
+                        <span>Naam: (verplicht)</span>
+                        <input placeholder="Voer uw naam in" type="text" required>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span>E-mail: (verplicht)</span>
+                        <input placeholder="Voer uw e-mailadres in" type="email" tabindex="2" required>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span>Telefoon: (verplicht)</span>
+                        <input placeholder="Voer uw nummer in" type="tel" tabindex="3" required>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span>Website: (verplicht)</span>
+                        <input placeholder="Begin met http://" type="url" tabindex="4" required>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span>Bericht: (verplicht)</span>
+                        <textarea placeholder="Verstrek zoveel mogelijk details" tabindex="5" required></textarea>
+                    </label>
+                </div>
+                <div>
+                    <button name="submit" type="submit" id="contact-submit">Verstuur</button>
+                </div>
+            </form></div>
+
+<footer>
+    <div id="footer">
+        <p>Uw eigen website?<br /> Al onze intakes zijn vrijblijvend!</p>
+        <p>Social media<br /> <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a></p>
+        <p>Bel of mail ons voor een prijsindicatie!<br /> E-mail: <a href="mailto:s.a.wilpstra@gmail.com">s.a.wilpstra@gmail.com</a><br/>Tel: 063330974643</p>
+    </div>
+</footer>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+<script src="JclassListShim.js"></script>
+<script src="jclassListShim2.js"></script>
+</body>
+</html>
